@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ejercicio1</title>
+</head>
+<body>
+{% block content %}
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+    <h1 style="text-align: center; margin-bottom: 20px;">Cálculo de Compras</h1>
+    <form action="/resultado1" method="post" style="text-align: center;">
+        <div style="margin-bottom: 15px;">
+            <label for="nombre">Ingresa tu nombre:</label><br>
+            <input type="text" id="nombre" name="nombre">
+        </div>
+        <div style="margin-bottom: 15px;">
+            <label for="edad">Ingresa tu edad:</label><br>
+            <input type="number" id="edad" name="edad">
+        </div>
+        <div style="margin-bottom: 15px;">
+            <label for="cantidad">Ingresa la cantidad de tarros de pinturas a comprar:</label><br>
+            <input type="number" id="cantidad" name="cantidad">
+        </div>
+        <button type="submit" style="color: white; background-color: blue; margin-top: 20px;">Calcular</button>
+    </form>
+</div>
+{% endblock %}
+</body>
+</html>
